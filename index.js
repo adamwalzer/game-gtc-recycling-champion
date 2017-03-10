@@ -106,15 +106,15 @@ skoash.start(
                 spriteClass="recycle-item"
             />,
             <skoash.SpriteCSS
-                src={`${CMWN.MEDIA.SPRITE}_liquids`}
-                spriteClass="liquids-item"
+                src={`${CMWN.MEDIA.SPRITE}_compost`}
+                spriteClass="compost-item"
             />,
             <skoash.SpriteCSS
                 src={`${CMWN.MEDIA.SPRITE}_landfill`}
                 spriteClass="landfill-item"
             />,
             <skoash.Image className="hidden" src={`${CMWN.MEDIA.SPRITE}_recycle.png`} />,
-            <skoash.Image className="hidden" src={`${CMWN.MEDIA.SPRITE}_liquids.png`} />,
+            <skoash.Image className="hidden" src={`${CMWN.MEDIA.SPRITE}_compost.png`} />,
             <skoash.Image className="hidden" src={`${CMWN.MEDIA.SPRITE}_landfill.png`} />,
             <skoash.Image className="hidden" src={`${CMWN.MEDIA.IMAGE}purple.ribbon.png`} />,
             <skoash.Image className="hidden" src={`${CMWN.MEDIA.IMAGE}luggage.png`} />,
@@ -143,6 +143,7 @@ skoash.start(
             />,
             <skoash.Audio ref="BKG0" type="background" src={`${CMWN.MEDIA.EFFECT}titlescreen.mp3`} loop />,
             <skoash.Audio ref="BKG1" type="background" src={`${CMWN.MEDIA.EFFECT}BKG1.mp3`} loop />,
+            <skoash.Audio ref="BKG6" type="background" src={`${CMWN.MEDIA.EFFECT}BKG6.mp3`} loop />,
             <div className="background title" />,
             <div className="background bkg1" />,
             <div className="background bkg2" />,
