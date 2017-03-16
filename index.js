@@ -155,17 +155,5 @@ skoash.start(
         ].concat(audioArray)}
     />
 );
-        /*renderExtras={function () {
-            return (
-                <skoash.AudioSprite
-                    ref="itemVOs"
-                    type="voiceOver"
-                    srcFolder={CMWN.MEDIA.VO}
-                    dataSrc="items.json"
-                    play={this.state.data.itemRef}
-                    complete
-                />
-            );
-        }}*/
 
 if (module.hot) module.hot.accept();
