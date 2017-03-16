@@ -49,23 +49,24 @@ let audioRefs = _.uniq(_.map(itemsToSort, v =>
 );
 
 let audioArray = _.map(audioRefs, (v, k) => {
-    return (
-        <skoash.Audio
-            ref={v}
-            key={k}
-            type={'voiceOver'}
-            src={`${CMWN.MEDIA.GAME + 'sound-assets/_vositems/' + v}.mp3`}
-            checkReady={false}
-            ready={true}
-            onPlay={function () {
+    return {
+        type: skoash.Audio,
+        ref: v,
+        key: k,
+        props: {
+            type: 'voiceOver',
+            src: `${CMWN.MEDIA.GAME + 'sound-assets/_vositems/' + v}.mp3`,
+            checkReady: false,
+            ready: true,
+            onPlay: function () {
                 this.updateScreenData({
                     keys: ['item', 'new'],
                     data: false,
                 });
-            }}
-            loadIndex={7}
-        />
-    );
+            },
+            loadIndex: 7,
+        },
+    };
 });
 
 skoash.start(
@@ -171,11 +172,7 @@ skoash.start(
             <div className="background trash" />,
             <div className="background transition" />,
             <div className="background quit" />,
-        ]}
-        renderExtras={function () {
-            if (this.state.mobile) return null;
-            return audioArray;
-        }}
+        ].concat(audioArray)}
     />
 );
 
