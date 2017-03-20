@@ -64,7 +64,7 @@ let audioArray = _.map(audioRefs, (v, k) => {
                     data: false,
                 });
             },
-            loadIndex: 7,
+            loadIndex: 6,
         },
     };
 });
