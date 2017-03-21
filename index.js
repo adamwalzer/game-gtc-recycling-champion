@@ -147,7 +147,7 @@ skoash.start(
                 ref="BKG0"
                 type="background"
                 src={`${CMWN.MEDIA.EFFECT}titlescreen.mp3`}
-                unloadIndex={2}
+                unloadIndex={3}
                 loop
             />,
             <skoash.Audio
